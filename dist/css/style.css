@@ -116,6 +116,11 @@ body.dark-theme main .social-network__links {
   padding: 0 20px;
   text-align: center;
 }
+@media screen and (max-width: 440px) {
+  .header-profile__user {
+    font-size: 18px;
+  }
+}
 
 main {
   margin: 15px 0 0 0;
@@ -147,7 +152,7 @@ main .social-network__text {
 }
 @media screen and (max-width: 440px) {
   main .social-network__text {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 main .social-network__links {

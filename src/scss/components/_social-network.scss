@@ -30,7 +30,7 @@ main {
             width: 80px; 
 
             @include mobile-large{
-                font-size: $s22;
+                font-size: $s18;
             }
         }
 
@@ -54,5 +54,4 @@ main {
             }
         }
     }
-
 }

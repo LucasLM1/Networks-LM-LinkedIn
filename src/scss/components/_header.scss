@@ -53,5 +53,8 @@
         margin: 10px 0 0 0;
         padding: 0 20px;
         text-align: center;
+        @include mobile-large{
+            font-size: $s18;
+        }
     }
 }
