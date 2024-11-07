@@ -1,0 +1,58 @@
+@use "../variables/all-variables" as *;
+@use "../variables/fonts" as *;
+
+main {
+    @extend .header-profile;
+    margin: 15px 0 0 0;
+
+    .social-network {
+        @include flexCenter;
+        position: relative;
+        width: 100%;
+        height: 70px;
+        font-size: $s20;
+        color: $black;
+        border-radius: 10px;
+        gap: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        overflow: hidden;
+        transition: .5s all;
+
+        &:hover{
+            background-color: $blue;
+            box-shadow: 0 0 10px 5px $blue;
+        }
+
+        &__text{
+            font-size: $s20;
+            font-weight: $w4;
+            width: 80px; 
+
+            @include mobile-large{
+                font-size: $s22;
+            }
+        }
+
+        &__links{
+            @include flexCenter;
+            position: relative;
+            margin: 10px auto !important;
+            width: 70%;
+            height: 70px;
+            font-size: $s20;
+            color: $black;
+            border: 3px solid $blue;
+            border-radius: 10px;
+            gap: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            overflow: hidden;
+
+            @include mobile-large{
+                width: 95%;
+            }
+        }
+    }
+
+}

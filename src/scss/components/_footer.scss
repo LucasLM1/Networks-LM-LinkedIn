@@ -1,0 +1,24 @@
+@use "../variables/all-variables" as *;
+@use "../variables/fonts" as *;
+
+.footer {
+    @include flexCenter;
+    margin: 30px 0 0 0;
+
+    // @include mobile-large{
+    //     width: 60%;
+    //     left: 70px;
+    //     position: relative;
+    // }
+
+    &__copyright{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: $s20;
+        font-weight: $w4;
+    }
+
+}

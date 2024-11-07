@@ -1,0 +1,34 @@
+{
+  "name": "networks-lm-linkedin",
+  "version": "1.0.0",
+  "description": "",
+  "author": "LUC4SLM",
+  "url": "",
+  "license": "MIT License",
+  "keywords": "gulp",
+  "scripts": {
+    "start": "gulp && gulp watch",
+    "build": "gulp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-clean-css": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*",
+    "sass": "^1.80.6"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "gulp-dart-sass": "^1.1.0",
+    "notify-send": "^0.1.2"
+  }
+}

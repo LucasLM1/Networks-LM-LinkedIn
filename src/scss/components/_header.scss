@@ -1,0 +1,57 @@
+@use "../variables/all-variables" as *;
+@use "../variables/fonts" as *;
+
+.header-profile {
+    @include flexCenter;
+    flex-flow: column;
+    margin: 30px 0 0 0;
+
+    .nav{
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        &__logo{
+            img{
+                height: 50px;
+                border-radius: 10px;
+                transition: .5s all;
+                box-shadow: 0 0 10px $blue;
+
+                &:hover{
+                    box-shadow: 0 0 10px 5px $orange;
+                }
+            }
+        }
+    }
+
+    &__image {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 5px solid $blue;
+        box-shadow: 0 0 10px 0px $blue;
+        padding: 3px;
+        transition: .5s all;
+
+        &:hover {
+            border: 5px solid $orange;
+            box-shadow: 0 0 15px 5px $orange;
+        }
+    }
+
+    &__name {
+        font-size: $s20;
+        font-weight: $w5;
+        margin: 25px 0 0 0;
+    }
+
+    &__user {
+        font-size: $s20;
+        margin: 10px 0 0 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+}
