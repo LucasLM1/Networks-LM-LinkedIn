@@ -1,5 +1,6 @@
 @use "./variables/all-variables" as *;
 
+@use "./components/scroll-bar";
 @use "./components/header";
 @use "./components/social-network";
 @use "./components/footer";
