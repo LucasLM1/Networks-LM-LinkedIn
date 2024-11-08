@@ -21,6 +21,7 @@ main {
 
         &:hover{
             background-color: $blue;
+            color: $white;
             box-shadow: 0 0 10px 5px $blue;
         }
 
